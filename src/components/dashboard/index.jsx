@@ -33,29 +33,32 @@ const Dashboad = () =>{
       })
 
       const brands = payload?.map(e => e.marca)
-      const vendas = payload?.map(e => e.vendas)
-
-      if(vendas[0])
-      {
-        const dataChart = [
-          {
-            id: "VENDAS",
-            data: Object.keys(vendas[0]).map(month => {
-              return {
-                x: month,
-                y: vendas[0][month]
-              };
-            })
-          }
-        ];
-        setLineData(dataChart)
-      }
-      
+     
+      setDataChart(payload)
       setBrandToShow(brands)
       setBrand(brands[0])
     }, [product])
 
 
+  const setDataChart = (payload) => {
+    const vendas = payload?.map(e => e.vendas)
+
+    if(vendas[0])
+    {
+      const dataChart = [
+        {
+          id: "VENDAS",
+          data: Object.keys(vendas[0]).map(month => {
+            return {
+              x: month,
+              y: vendas[0][month]
+            };
+          })
+        }
+      ];
+      setLineData(dataChart)
+    }
+  } 
     
   const handleCategoryChange = (event) => {
     setCategory(event.target.value);
@@ -68,12 +71,11 @@ const Dashboad = () =>{
   const handleBrandChange = (event) => {
     const value = event.target.value
 
-    const vendas = brandData.filter(e => {
+    const payload = brandData.filter(e => {
       if(e.marca === value) return e;
     })
-    console.log(vendas)
 
-
+    setDataChart(payload)
     setBrand(value);
   }
   

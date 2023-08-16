@@ -1,6 +1,6 @@
 export const category = ["Roupa",  "Alimentos"];
 
-export const products = [{ type :'Roupa' , products: ['Camisa', 'Calça']} , { type :'Alimento' , products: ['Cereais', ' Fruta']}];
+export const products = [{ type :'Roupa' , products: ['Camisa', 'Calça']} , { type :'Alimento' , products: ['Cereais', 'Fruta']}];
 
 export const marcas = [
         { 
@@ -32,8 +32,8 @@ export const marcas = [
                 {
                     janeiro: 100,
                     fevereiro: 374,
-                    marco: 402,
-                    abril: 636,
+                    marco: 452,
+                    abril: 236,
                 }
         }, 
         { 
@@ -42,9 +42,9 @@ export const marcas = [
             vendas :
                 {
                     janeiro: 100,
-                    fevereiro: 474,
-                    marco: 402,
-                    abril: 536,
+                    fevereiro: 84,
+                    marco: 102,
+                    abril: 306,
                 }
         }, 
         { 
@@ -54,8 +54,8 @@ export const marcas = [
                 {
                     janeiro: 100,
                     fevereiro: 474,
-                    marco: 402,
-                    abril: 536,
+                    marco: 92,
+                    abril: 136,
                 }
         }, 
         { 
@@ -66,7 +66,7 @@ export const marcas = [
                     janeiro: 100,
                     fevereiro: 474,
                     marco: 402,
-                    abril: 536,
+                    abril: 956,
                 }
         }, 
         { 
@@ -87,8 +87,8 @@ export const marcas = [
                 {
                     janeiro: 100,
                     fevereiro: 474,
-                    marco: 402,
-                    abril: 536,
+                    marco: 482,
+                    abril: 756,
                 }
         }, 
         { 
