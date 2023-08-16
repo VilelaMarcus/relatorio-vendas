@@ -6,6 +6,6 @@ Abra um terminal na pasta em que os arquivos estao e instale os packages necessa
 
 npm install
 
-Apos a instalaco para rodar de
+Apos a instalaco para rodar execute o comando abaixo.
 
 npm start
